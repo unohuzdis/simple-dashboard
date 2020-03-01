@@ -3,26 +3,19 @@ import React from 'react';
 import './App.css';
 
 import 'rsuite/dist/styles/rsuite-default.css';
-import { Button } from 'rsuite';
+import { Container, Header, Content, Footer, Sidebar } from 'rsuite';
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <Button appearance="primary"> Hello world </Button>
+      <Container>
+        <Sidebar style = {{background: 'blue'}}>Sidebar</Sidebar>
+        <Container>
+          <Header style = {{background: 'red'}}>Header</Header>
+          <Content style = {{background: 'yellow'}}>Content</Content>
+          <Footer style = {{background: 'grey'}}>Footer</Footer>
+        </Container>
+      </Container>
     </div>
   );
 }
