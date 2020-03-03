@@ -13,7 +13,7 @@ const headerStyles = {
     overflow: 'hidden'
 };
 
-const SideNav = ({ onSelect, props }) => {
+const SideNav = ({ onSelect, expand }) => {
     return (
         <div>
             <Sidenav.Header>
@@ -23,7 +23,7 @@ const SideNav = ({ onSelect, props }) => {
                 </div>
             </Sidenav.Header>
             <Sidenav
-                // expanded={props.expand}
+                expanded={expand}
                 defaultOpenKeys={['3']}
                 onSelect={onSelect}
             >
