@@ -14,9 +14,6 @@ const CustomPlaceholder = () => {
             <Paragraph style={{ marginTop: 30 }} graph="circle" />
             <Paragraph style={{ marginTop: 30 }} graph="square" />
             <Paragraph style={{ marginTop: 30 }} graph="image" />
-            <hr />
-            <p>Animation:</p>
-            <Paragraph style={{ marginTop: 30 }} rows={5} graph="image" active />
         </div>
     );
 }
