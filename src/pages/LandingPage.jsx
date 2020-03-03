@@ -4,10 +4,8 @@ import 'rsuite/dist/styles/rsuite-default.css';
 import { Container, Header, Content, Footer, Sidebar } from 'rsuite';
 import SideNav from '../components/side-nav/SideNav';
 import TopNav from '../components/top-nav/TopNav';
-import MainContent from '../components/content/main-content';
-
-
-
+import MainContent from '../components/content/MainContent';
+import CustomFooter from '../components/footer/CustomFooter';
 
 class LandingPage extends React.Component {
     constructor() {
@@ -38,7 +36,9 @@ class LandingPage extends React.Component {
                         <Content style={{ background: 'white' }}>
                             <MainContent title={this.state.clickedContent} />
                         </Content>
-                        <Footer style={{ background: '#3498FF' }}>Footer</Footer>
+                        <Footer> 
+                            <CustomFooter />
+                        </Footer>
                     </Container>
                 </Container>
             </div>
