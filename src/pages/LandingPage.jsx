@@ -1,11 +1,12 @@
 import React from 'react';
-
 import 'rsuite/dist/styles/rsuite-default.css';
 import { Container, Header, Content, Footer, Sidebar } from 'rsuite';
+
 import SideNav from '../components/side-nav/SideNav';
 import TopNav from '../components/top-nav/TopNav';
 import MainContent from '../components/content/MainContent';
 import CustomFooter from '../components/footer/CustomFooter';
+import CustomPlaceholder from '../components/placeholder/CustomPlaceholder';
 
 class LandingPage extends React.PureComponent {
     constructor() {
@@ -51,6 +52,7 @@ class LandingPage extends React.PureComponent {
                         </Header>
                         <Content style={{ background: 'white' }}>
                             <MainContent title={this.state.clickedContent} />
+                            <CustomPlaceholder />
                         </Content>
                         <Footer>
                             <CustomFooter />
