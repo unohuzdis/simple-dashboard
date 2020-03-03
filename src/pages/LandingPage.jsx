@@ -9,7 +9,7 @@ import TopNav from '../components/top-nav/TopNav';
 const LandingPage = () => {
     return (
         <div>
-            <Container style={{ background: "#E5E5E5" }}>
+            <Container style={{ background: "#F7F8FA", height: "100vh" }}>
                 <Sidebar>
                     <SideNav />
                 </Sidebar>

@@ -11,7 +11,7 @@ const headerStyles = {
     color: ' #fff',
     whiteSpace: 'nowrap',
     overflow: 'hidden'
-  };
+};
 
 const SideNav = ({ props }) => {
     return (
@@ -25,41 +25,49 @@ const SideNav = ({ props }) => {
             <Sidenav
                 // expanded={props.expand}
                 defaultOpenKeys={['3']}
-                appearance="subtle"
             >
                 <Sidenav.Body>
                     <Nav>
-                        <Nav.Item eventKey="1" active icon={<Icon icon="dashboard" />}>
+                        <Nav.Item eventKey="Dashboard" active icon={<Icon icon="dashboard" />}>
                             Dashboard
                         </Nav.Item>
-                        <Nav.Item eventKey="2" icon={<Icon icon="group" />}>
+                        {/* <Nav.Item eventKey="2" icon={<Icon icon="group" />}>
                             User Group
-                        </Nav.Item>
+                        </Nav.Item> */}
                         <Dropdown
-                            eventKey="3"
+                            eventKey="User Group"
+                            trigger="hover"
+                            title="User Group"
+                            icon={<Icon icon="group" />}
+                            placement="rightStart"
+                        >
+                            <Dropdown.Item eventKey="G1">G1</Dropdown.Item>
+                            <Dropdown.Item eventKey="G2">G2</Dropdown.Item>
+                        </Dropdown>
+                        <Dropdown
+                            eventKey="Advanced"
                             trigger="hover"
                             title="Advanced"
                             icon={<Icon icon="magic" />}
                             placement="rightStart"
                         >
-                            <Dropdown.Item eventKey="3-1">Geo</Dropdown.Item>
-                            <Dropdown.Item eventKey="3-2">Devices</Dropdown.Item>
-                            <Dropdown.Item eventKey="3-3">Brand</Dropdown.Item>
-                            <Dropdown.Item eventKey="3-4">Loyalty</Dropdown.Item>
-                            <Dropdown.Item eventKey="3-5">Visit Depth</Dropdown.Item>
+                            <Dropdown.Item eventKey="Geo">Geo</Dropdown.Item>
+                            <Dropdown.Item eventKey="Devices">Devices</Dropdown.Item>
+                            <Dropdown.Item eventKey="Retention">Retention</Dropdown.Item>
+                            <Dropdown.Item eventKey="Visits">Visits</Dropdown.Item>
                         </Dropdown>
                         <Dropdown
-                            eventKey="4"
+                            eventKey="Settings"
                             trigger="hover"
                             title="Settings"
                             icon={<Icon icon="gear-circle" />}
                             placement="rightStart"
                         >
-                            <Dropdown.Item eventKey="4-1">Applications</Dropdown.Item>
-                            <Dropdown.Item eventKey="4-2">Websites</Dropdown.Item>
-                            <Dropdown.Item eventKey="4-3">Channels</Dropdown.Item>
-                            <Dropdown.Item eventKey="4-4">Tags</Dropdown.Item>
-                            <Dropdown.Item eventKey="4-5">Versions</Dropdown.Item>
+                            <Dropdown.Item eventKey="Applications">Applications</Dropdown.Item>
+                            <Dropdown.Item eventKey="Websites">Websites</Dropdown.Item>
+                            <Dropdown.Item eventKey="Channels">Channels</Dropdown.Item>
+                            <Dropdown.Item eventKey="Tags">Tags</Dropdown.Item>
+                            <Dropdown.Item eventKey="Versions">Versions</Dropdown.Item>
                         </Dropdown>
                     </Nav>
                 </Sidenav.Body>
