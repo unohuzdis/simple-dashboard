@@ -3,12 +3,12 @@ import React from 'react';
 import 'rsuite/dist/styles/rsuite-default.css';
 import { Navbar, Icon, Nav, Dropdown } from 'rsuite';
 
-const TopNav = ({ onSelect, activeKey, ...props }) => {
+const TopNav = ({ onSelect, ...props }) => {
     return (
         <div>
             <Navbar {...props}>
                 <Navbar.Body>
-                    <Nav onSelect={onSelect} activeKey={activeKey} pullRight>
+                    <Nav onSelect={onSelect} pullRight>
                         <Nav.Item eventKey="Home" icon={<Icon icon="home" />}>
                             Home
                         </Nav.Item>

@@ -13,7 +13,7 @@ const headerStyles = {
     overflow: 'hidden'
 };
 
-const SideNav = ({ props }) => {
+const SideNav = ({ onSelect, props }) => {
     return (
         <div>
             <Sidenav.Header>
@@ -25,20 +25,21 @@ const SideNav = ({ props }) => {
             <Sidenav
                 // expanded={props.expand}
                 defaultOpenKeys={['3']}
+                onSelect={onSelect}
             >
                 <Sidenav.Body>
                     <Nav>
                         <Nav.Item eventKey="Dashboard" active icon={<Icon icon="dashboard" />}>
                             Dashboard
                         </Nav.Item>
-                        {/* <Nav.Item eventKey="2" icon={<Icon icon="group" />}>
+                        <Nav.Item eventKey="User Group" icon={<Icon icon="group" />}>
                             User Group
-                        </Nav.Item> */}
+                        </Nav.Item>
                         <Dropdown
-                            eventKey="User Group"
+                            eventKey="Starred"
                             trigger="hover"
-                            title="User Group"
-                            icon={<Icon icon="group" />}
+                            title="Starred"
+                            icon={<Icon icon="star" />}
                             placement="rightStart"
                         >
                             <Dropdown.Item eventKey="G1">G1</Dropdown.Item>
