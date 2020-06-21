@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Motivation
 
-To brush up my React skills
+To brush up my React skills and try out Rsuite library
 
 ## Available Scripts
 
